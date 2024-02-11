@@ -7,7 +7,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Blog.API", "Blog.API\Blog.A
 EndProject
 Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "Blog.UI", "Blog.UI\", "{0DD3751B-DC30-44CB-AA79-C1FCC30BBD3D}"
 	ProjectSection(WebsiteProperties) = preProject
-		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.0"
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.8"
 		Debug.AspNetCompiler.VirtualPath = "/localhost_50488"
 		Debug.AspNetCompiler.PhysicalPath = "Blog.UI\"
 		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_50488\"
