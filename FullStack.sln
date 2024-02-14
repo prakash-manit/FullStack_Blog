@@ -5,6 +5,27 @@ VisualStudioVersion = 17.1.32228.430
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Blog.API", "Blog.API\Blog.API.csproj", "{5669CE41-04F9-41FE-B477-8E1280A91863}"
 EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "Blog.UI", "Blog.UI\", "{0DD3751B-DC30-44CB-AA79-C1FCC30BBD3D}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.8"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_50488"
+		Debug.AspNetCompiler.PhysicalPath = "Blog.UI\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_50488\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_50488"
+		Release.AspNetCompiler.PhysicalPath = "Blog.UI\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_50488\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "50488"
+		SlnRelativePath = "Blog.UI\"
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +36,9 @@ Global
 		{5669CE41-04F9-41FE-B477-8E1280A91863}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5669CE41-04F9-41FE-B477-8E1280A91863}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5669CE41-04F9-41FE-B477-8E1280A91863}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0DD3751B-DC30-44CB-AA79-C1FCC30BBD3D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0DD3751B-DC30-44CB-AA79-C1FCC30BBD3D}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{0DD3751B-DC30-44CB-AA79-C1FCC30BBD3D}.Release|Any CPU.Build.0 = Debug|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
