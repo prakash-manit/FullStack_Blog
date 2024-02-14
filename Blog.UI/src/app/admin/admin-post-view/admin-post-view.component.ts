@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { PostUpdate } from 'src/app/model/post-update.model';
 import { Post } from 'src/app/model/post.model';
 import { PostService } from 'src/app/service/post.service';
@@ -11,7 +11,7 @@ import { PostService } from 'src/app/service/post.service';
 })
 export class AdminPostViewComponent implements OnInit {
 
-  constructor(private route: ActivatedRoute, private postService: PostService) { }
+  constructor(private route: ActivatedRoute, private postService: PostService, public router: Router) { }
   post: Post | undefined;
 
   ngOnInit(): void {
@@ -47,6 +47,7 @@ export class AdminPostViewComponent implements OnInit {
     .subscribe(
       response => {
         alert('Success');
+        this.router.navigate(['admin/post']);
       }
     )
   }
@@ -56,6 +57,7 @@ export class AdminPostViewComponent implements OnInit {
     .subscribe(
       response => {
         alert('Deleted successfully');
+        this.router.navigate(['admin/post']);
       }
     );
   }

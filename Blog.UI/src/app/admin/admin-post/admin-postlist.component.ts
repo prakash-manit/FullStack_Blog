@@ -4,20 +4,20 @@ import { PostService } from 'src/app/service/post.service';
 
 @Component({
   selector: 'app-admin-post',
-  templateUrl: './admin-post.component.html',
-  styleUrls: ['./admin-post.component.scss']
+  templateUrl: './admin-postlist.component.html',
+  styleUrls: ['./admin-postlist.component.scss']
 })
-export class AdminPostComponent implements OnInit {
+export class AdminPostListComponent implements OnInit {
 
   constructor(private postService: PostService) { }
 
-  posts: Post[] = [];
+  postlist: Post[] = [];
 
   ngOnInit(): void {
-    this.postService.getAllPosts()
+    this.postService.getPostList()
     .subscribe(
       response => {
-        this.posts = response;
+        this.postlist = response;
       }
     );
   }

@@ -3,21 +3,21 @@ import { PostService } from '../service/post.service';
 import { Post } from '../model/post.model';
 
 @Component({
-  selector: 'app-posts',
-  templateUrl: './posts.component.html',
-  styleUrls: ['./posts.component.scss']
+  selector: 'app-postlist',
+  templateUrl: './postlist.component.html',
+  styleUrls: ['./postlist.component.scss']
 })
-export class PostsComponent implements OnInit {
+export class PostlistComponent implements OnInit {
 
   constructor(private postService:PostService) { }
 
-  posts: Post[] = [];
+  postlist: Post[] = [];
 
   ngOnInit(): void {
-    this.postService.getAllPosts()
+    this.postService.getPostList()
     .subscribe(
       response => {
-        this.posts = response;
+        this.postlist = response;
        
         }
       );

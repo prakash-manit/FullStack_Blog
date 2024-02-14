@@ -1,15 +1,15 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { AdminPostComponent } from './admin/admin-post/admin-post.component';
+import { AdminPostListComponent } from './admin/admin-post/admin-postlist.component';
 import { AdminPostViewComponent } from './admin/admin-post-view/admin-post-view.component';
 import { AdminPostAddComponent } from './admin/admin-post-add/admin-post-add.component';
-import { PostsComponent } from './posts/posts.component';
+import { PostlistComponent } from './postlist/postslist.component';
 import { PostComponent } from './post/post.component';
 
 const routes: Routes = [
   {
     path: '',
-    component:PostsComponent
+    component:PostlistComponent
   },
   {
     path: 'post/:id',
@@ -17,7 +17,7 @@ const routes: Routes = [
   },
   {
     path: 'admin/post',
-    component: AdminPostComponent
+    component: AdminPostListComponent
   },
   {
     path: 'admin/post/add',

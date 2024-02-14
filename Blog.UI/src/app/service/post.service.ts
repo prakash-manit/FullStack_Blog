@@ -15,7 +15,7 @@ export class PostService {
   apiBaseUrl = environment.apiBaseUrl;
 
 
-  getAllPosts(): Observable<Post[]>{
+  getPostList(): Observable<Post[]>{
     return this.http.get<Post[]>(this.apiBaseUrl + 'api/post');
   }
 

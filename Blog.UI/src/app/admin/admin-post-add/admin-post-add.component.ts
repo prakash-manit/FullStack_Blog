@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { PostAdd } from 'src/app/model/post-add.model';
 import { PostService } from 'src/app/service/post.service';
 
@@ -9,7 +10,7 @@ import { PostService } from 'src/app/service/post.service';
 })
 export class AdminPostAddComponent implements OnInit {
 
-  constructor(private postService: PostService) { }
+  constructor(private postService: PostService, public router: Router) { }
 
   post: PostAdd = {
     title: '',
@@ -30,6 +31,7 @@ export class AdminPostAddComponent implements OnInit {
       response => 
       {
         alert('Added successfully');
+        this.router.navigate(['admin/post']);
       }
     )
   }
